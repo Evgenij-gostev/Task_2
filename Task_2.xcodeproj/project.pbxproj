@@ -12,6 +12,7 @@
 		8C0DF6C42182560B0029C838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0DF6C32182560B0029C838 /* Assets.xcassets */; };
 		8C0DF6C72182560B0029C838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0DF6C52182560B0029C838 /* Main.storyboard */; };
 		8C0DF6CA2182560B0029C838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0DF6C92182560B0029C838 /* main.m */; };
+		8C0DF6D3218256750029C838 /* Information.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0DF6D2218256750029C838 /* Information.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		8C0DF6C82182560B0029C838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C0DF6C92182560B0029C838 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C0DF6CB2182560B0029C838 /* Task_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Task_2.entitlements; sourceTree = "<group>"; };
+		8C0DF6D1218256740029C838 /* Information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Information.h; sourceTree = "<group>"; };
+		8C0DF6D2218256750029C838 /* Information.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Information.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +60,12 @@
 		8C0DF6BC218256070029C838 /* Task_2 */ = {
 			isa = PBXGroup;
 			children = (
-				8C0DF6BD218256070029C838 /* AppDelegate.h */,
-				8C0DF6BE218256070029C838 /* AppDelegate.m */,
+				8C0DF6D1218256740029C838 /* Information.h */,
+				8C0DF6D2218256750029C838 /* Information.m */,
 				8C0DF6C0218256070029C838 /* ViewController.h */,
 				8C0DF6C1218256070029C838 /* ViewController.m */,
+				8C0DF6BD218256070029C838 /* AppDelegate.h */,
+				8C0DF6BE218256070029C838 /* AppDelegate.m */,
 				8C0DF6C32182560B0029C838 /* Assets.xcassets */,
 				8C0DF6C52182560B0029C838 /* Main.storyboard */,
 				8C0DF6C82182560B0029C838 /* Info.plist */,
@@ -141,6 +146,7 @@
 			files = (
 				8C0DF6C2218256070029C838 /* ViewController.m in Sources */,
 				8C0DF6CA2182560B0029C838 /* main.m in Sources */,
+				8C0DF6D3218256750029C838 /* Information.m in Sources */,
 				8C0DF6BF218256070029C838 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
