@@ -8,22 +8,14 @@
 
 #import "Information.h"
 
+
 @implementation Information
 
-- (id)initWithServerResponse:(NSDictionary*) responseObject {
+- (instancetype)initWithName:(NSString*) name andValue:(NSString*) value {
   self = [super init];
   if (self) {
-    if (responseObject[@"name"] != [NSNull null]) {
-      _name = responseObject[@"name"];
-    } else {
-      _name = nil;
-    }
-    
-    if (responseObject[@"value"] != [NSNull null]) {
-      _value = responseObject[@"value"];
-    } else {
-      _value = nil;
-    }
+    _name = name;
+    _value = value;
   }
   return self;
 }

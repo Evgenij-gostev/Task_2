@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Information.h"
+#import "InformationParser.h"
 
 @implementation ViewController
 
@@ -41,20 +42,24 @@
 
   
   NSDictionary *response = [NSJSONSerialization
-                               JSONObjectWithData:responseData
-                               options:NSJSONReadingMutableContainers
-                               error:nil];
+                             JSONObjectWithData:responseData
+                                        options:NSJSONReadingMutableContainers
+                                          error:nil];
 
   if ([NSJSONSerialization isValidJSONObject:response]) {
-    NSDictionary* data = [response objectForKey:@"data"];
-
-    if (![data isKindOfClass:[NSArray class]]) {
-      Information* information = [[Information alloc] initWithServerResponse:data];
-      [informations addObject:information];
-    } else {
-      for (NSDictionary* dict in data) {
-        Information* information = [[Information alloc]                          initWithServerResponse:dict];
+    if (response[@"data"] != [NSNull null]) {
+      NSDictionary* data = response[@"data"];
+      
+      if (![data isKindOfClass:[NSArray class]]) {
+        Information* information = [[InformationParser alloc]
+                                    getInformationWithServerResponse:data];
         [informations addObject:information];
+      } else {
+        for (NSDictionary* dict in data) {
+          Information* information = [[InformationParser alloc]
+                                      getInformationWithServerResponse:dict];
+          [informations addObject:information];
+        }
       }
     }
   }
@@ -62,11 +67,6 @@
   for (Information* inf in informations) {
     NSLog(@"Result: %@", inf);
   }
-
-  
 }
-
-
-
 
 @end

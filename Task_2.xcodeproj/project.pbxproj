@@ -13,6 +13,7 @@
 		8C0DF6C72182560B0029C838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0DF6C52182560B0029C838 /* Main.storyboard */; };
 		8C0DF6CA2182560B0029C838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0DF6C92182560B0029C838 /* main.m */; };
 		8C0DF6D3218256750029C838 /* Information.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0DF6D2218256750029C838 /* Information.m */; };
+		8C67D0482183995300BB7A9C /* InformationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C67D0472183995300BB7A9C /* InformationParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		8C0DF6CB2182560B0029C838 /* Task_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Task_2.entitlements; sourceTree = "<group>"; };
 		8C0DF6D1218256740029C838 /* Information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Information.h; sourceTree = "<group>"; };
 		8C0DF6D2218256750029C838 /* Information.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Information.m; sourceTree = "<group>"; };
+		8C67D0462183995300BB7A9C /* InformationParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationParser.h; sourceTree = "<group>"; };
+		8C67D0472183995300BB7A9C /* InformationParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				8C0DF6D1218256740029C838 /* Information.h */,
 				8C0DF6D2218256750029C838 /* Information.m */,
+				8C67D0462183995300BB7A9C /* InformationParser.h */,
+				8C67D0472183995300BB7A9C /* InformationParser.m */,
 				8C0DF6C0218256070029C838 /* ViewController.h */,
 				8C0DF6C1218256070029C838 /* ViewController.m */,
 				8C0DF6BD218256070029C838 /* AppDelegate.h */,
@@ -145,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0DF6C2218256070029C838 /* ViewController.m in Sources */,
+				8C67D0482183995300BB7A9C /* InformationParser.m in Sources */,
 				8C0DF6CA2182560B0029C838 /* main.m in Sources */,
 				8C0DF6D3218256750029C838 /* Information.m in Sources */,
 				8C0DF6BF218256070029C838 /* AppDelegate.m in Sources */,
